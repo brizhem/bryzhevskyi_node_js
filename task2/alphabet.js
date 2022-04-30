@@ -1,0 +1,31 @@
+module.exports.getMapAlphabet = function () {
+  mapAlphabet = new Map();
+  mapAlphabet.set(0, "a");
+  mapAlphabet.set(1, "b");
+  mapAlphabet.set(2, "c");
+  mapAlphabet.set(3, "d");
+  mapAlphabet.set(4, "e");
+  mapAlphabet.set(5, "f");
+  mapAlphabet.set(6, "g");
+  mapAlphabet.set(7, "h");
+  mapAlphabet.set(8, "i");
+  mapAlphabet.set(9, "j");
+  mapAlphabet.set(10, "k");
+  mapAlphabet.set(11, "l");
+  mapAlphabet.set(12, "m");
+  mapAlphabet.set(13, "n");
+  mapAlphabet.set(14, "o");
+  mapAlphabet.set(15, "p");
+  mapAlphabet.set(16, "q");
+  mapAlphabet.set(17, "r");
+  mapAlphabet.set(18, "s");
+  mapAlphabet.set(19, "t");
+  mapAlphabet.set(20, "u");
+  mapAlphabet.set(21, "v");
+  mapAlphabet.set(22, "w");
+  mapAlphabet.set(23, "x");
+  mapAlphabet.set(24, "y");
+  mapAlphabet.set(25, "z");
+
+  return mapAlphabet;
+};
