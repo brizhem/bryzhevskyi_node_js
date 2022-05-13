@@ -1,0 +1,1 @@
+{"usename":"Vasya","password":"123","email":"exampl@post.com","key":"JSON"}
