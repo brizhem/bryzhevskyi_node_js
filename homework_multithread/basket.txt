@@ -1,0 +1,1 @@
+{"name":"item1","quantity":1,"price":500,"sum":500},{"name":"item2","quantity":1,"price":700,"sum":700},{"name":"item1","quantity":2,"price":300,"sum":600},
