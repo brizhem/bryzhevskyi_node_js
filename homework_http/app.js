@@ -1,6 +1,7 @@
 import express from "express";
 import fs from "node:fs";
 import { createGzip } from "node:zlib";
+import nodemailer from "nodemailer";
 
 const app = express();
 
@@ -45,5 +46,36 @@ app.get("/user/zip", (req, res) => {
     "D:/Inventorsoft/Course/bryzhevskyi_node_js/homework_http/users.txt.gz"
   );
 });
+
+app.get("/sendmail", (req, res) => {
+  SendFileToEmail(req.query.emailto);
+});
+
+const SendFileToEmail = async (recipient) => {
+  let transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true, // true for 465, false for other ports
+    auth: {
+      user: "testfornodemailer5@gmail.com",
+      pass: "TestPassword987",
+    },
+  });
+
+  let result = await transporter.sendMail({
+    from: '"Node js" <nodejs@example.com>',
+    to: recipient,
+    subject: "Vacansies from inventorsoft",
+    text: "Vacansies in attachment",
+    attachments: [
+      {
+        filename: "users.txt.gz",
+        path: "./users.txt.gz",
+      },
+    ],
+  });
+
+  console.log(result.response);
+};
 
 app.listen(3000);
