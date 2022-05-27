@@ -1,0 +1,1 @@
+{"users":[{"name":"test","email":"test@mail.com","password":"qwerty","role":"user"},{"name":"admin","email":"dmin@mail.com","password":"1234","role":"admin"},{"name":"new user","email":"exampl@mail.com","password":"456","role":"user"}]}
